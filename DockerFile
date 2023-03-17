@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8080
+ADD target/SastaBasta.jar SastaBasta.jar
+ENTRYPOINT ["java","-jar","/SastaBasta.jar"]
